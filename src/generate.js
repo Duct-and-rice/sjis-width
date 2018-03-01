@@ -58,7 +58,16 @@ export default function () {
     .map(c => {
       const ruler = new CanvasRuler()
       const width = ruler.getWidth(c.c)
-      return `${c.c}\t${width}`
+      const cWithQuotes = ((c)=>{
+        if(c==='"'){
+          return '""""'
+        }
+        if(c===' ' || c===','){
+          return `"${c}"`
+        }
+        return c
+      })(c.c)
+      return `${cWithQuotes}\t${width}`
     })
     .join('<br />')
 }
