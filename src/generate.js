@@ -47,22 +47,22 @@ export default function () {
     '▲',
     '▬',
     '▶',
-    ...SPACES.map(s=>s.str)
+    ...SPACES.map(s => s.str)
   ].map(c => ({ c: c, n: 0 }))
 
   console.log(SPACES)
   const chars = [...oneByteChars, ...twoBytesChars, ...unicodeChars]
   const uniqChars = uniqWith((a, b) => a.c === b.c)
 
-  el.innerHTML = uniqChars(chars)
+  el.innerHTML += uniqChars(chars)
     .map(c => {
       const ruler = new CanvasRuler()
       const width = ruler.getWidth(c.c)
-      const cWithQuotes = ((c)=>{
-        if(c==='"'){
+      const cWithQuotes = (c => {
+        if (c === '"') {
           return '""""'
         }
-        if(c===' ' || c===','){
+        if (c === ' ' || c === ',') {
           return `"${c}"`
         }
         return c
