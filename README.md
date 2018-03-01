@@ -3,3 +3,5 @@
 
 対象文字は[jconv](https://github.com/narirou/jconv)のSJIS表に登録してある文字(+手で入力した1バイト文字)と、AAでよく使われるUnicode文字です。
 
+[width-table.tsv](https://github.com/Duct-and-rice/sjis-width/blob/master/width-table.tsv)
+
