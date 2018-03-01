@@ -1,4 +1,5 @@
 import './style.css'
+import unicodeCharsArray from './unicode-chars'
 import { CanvasRuler } from 'js-yaruo'
 import { SPACES } from 'js-yaruo/src/space.ts'
 import * as jconv from 'jconv'
@@ -28,27 +29,7 @@ export default function () {
     .filter(c => c.c.length === 1)
 
   // Unicode Characters which used in SJIS Art
-
-  const unicodeChars = [
-    '▄',
-    '▪',
-    '▀',
-    '█',
-    '▂',
-    '▐',
-    '▆',
-    '▅',
-    '▎',
-    '◤',
-    '▌',
-    '◢',
-    '▍',
-    '▼',
-    '▲',
-    '▬',
-    '▶',
-    ...SPACES.map(s => s.str)
-  ].map(c => ({ c: c, n: 0 }))
+  const unicodeChars = unicodeCharsArray.map(c => ({ c: c, n: 0 }))
 
   console.log(SPACES)
   const chars = [...oneByteChars, ...twoBytesChars, ...unicodeChars]
