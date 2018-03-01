@@ -1,0 +1,13 @@
+@font-face{
+font-family: 'Stmr';
+src: local('Saitamaar'),
+url('http://keage.sakura.ne.jp/fonts/Saitamaar.eot?') format('eot'),
+url('http://keage.sakura.ne.jp/fonts/Saitamaar.woff2') format('woff2'),
+url('http://keage.sakura.ne.jp/fonts/Saitamaar.woff') format('woff'),
+url('http://keage.sakura.ne.jp/fonts/Saitamaar.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body {
+  font-family:Stmr;
+}

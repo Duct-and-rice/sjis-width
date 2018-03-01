@@ -1,0 +1,36 @@
+{
+  "name": "sjis-width",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duct-and-rice/sjis-width.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Duct-and-rice/sjis-width/issues"
+  },
+  "homepage": "https://github.com/Duct-and-rice/sjis-width#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "iconv-lite": "^0.4.19",
+    "is-node": "^1.0.2",
+    "jconv": "^0.1.5",
+    "js-yaruo": "git+https://github.com/Duct-and-rice/js-yaruo.git",
+    "parcel-bundler": "^1.6.2",
+    "ramda": "^0.25.0",
+    "typescript": "^2.7.2"
+  }
+}
